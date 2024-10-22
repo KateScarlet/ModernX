@@ -17,7 +17,7 @@ local utils = require 'mp.utils'
 -- change them using osc.conf
 local user_opts = {
     -- general settings --
-    language = 'en',                -- en:English, chs:Chinese, pl:Polish, jp:Japanese
+    language = 'chs',               -- en:English, chs:Chinese, pl:Polish, jp:Japanese
     welcomescreen = true,           -- show the mpv 'play files' screen upon open
     windowcontrols = 'auto',        -- whether to show OSC window controls, 'auto', 'yes' or 'no'
     showwindowed = true,            -- show OSC when windowed?
@@ -27,9 +27,9 @@ local user_opts = {
     
     -- scaling settings --
     vidscale = false,               -- whether to scale the controller with the video
-    scalewindowed = 1.0,            -- scaling of the controller when windowed
-    scalefullscreen = 1.0,          -- scaling of the controller when fullscreen
-    scaleforcedwindow = 1.0,        -- scaling when rendered on a forced window
+    scalewindowed = 1.5,            -- scaling of the controller when windowed
+    scalefullscreen = 1.5,          -- scaling of the controller when fullscreen
+    scaleforcedwindow = 1.5,        -- scaling when rendered on a forced window
 
     -- interface settings --
     hidetimeout = 2000,             -- duration in ms until OSC hides if no mouse movement
@@ -99,7 +99,7 @@ local user_opts = {
     showloop = true,                -- show the loop button
     loopinpause = true,             -- activate looping by right clicking pause
     showontop = true,               -- show window on top button
-    showinfo = false,               -- show the info button
+    showinfo = true,                -- show the info button
     downloadbutton = true,          -- show download button for web videos
     screenshotbutton = false,        -- show screenshot button
     downloadpath = "~~desktop/mpv/downloads", -- the download path for videos
